@@ -18,7 +18,7 @@ const Footer = () => {
                 </li>
             </ul>
             <p className={styles.copy_right}>
-                <span>Seminário</span> &copy; 2025
+                <span>Seminario</span> &copy; 2025
             </p>
         </footer>
     )
