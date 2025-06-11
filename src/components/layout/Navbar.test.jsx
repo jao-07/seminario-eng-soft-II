@@ -16,7 +16,7 @@ describe('Navbar', () => {
   test('renderiza todos os links da navegação', () => {
     renderWithRouter(<Navbar />);
     
-    expect(screen.getByRole('link', { name: /Inicio/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /Home/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Projetos/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Empresa/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /Contatos/i })).toBeInTheDocument();
@@ -25,7 +25,7 @@ describe('Navbar', () => {
   test('os links apontam para os caminhos corretos', () => {
     renderWithRouter(<Navbar />);
     
-    expect(screen.getByRole('link', { name: /Inicio/i }).getAttribute('href')).toBe('#/');
+    expect(screen.getByRole('link', { name: /Home/i }).getAttribute('href')).toBe('#/');
     expect(screen.getByRole('link', { name: /Projetos/i }).getAttribute('href')).toBe('#/projects');
     expect(screen.getByRole('link', { name: /Empresa/i }).getAttribute('href')).toBe('#/company');
     expect(screen.getByRole('link', { name: /Contatos/i }).getAttribute('href')).toBe('#/contact');
