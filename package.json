@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/jao-07/seminario-eng-soft-II.git"
   },
   "dependencies": {
     "jest": "^30.0.0",
