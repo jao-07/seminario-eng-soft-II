@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route, BrowserRouter} from 'react-router-dom'
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import Company from './components/pages/Company';
@@ -11,7 +11,7 @@ import Navbar from './components/layout/Navbar';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar/>
       <Container customClass="min-height">
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
